@@ -58,6 +58,12 @@ For tracking linters errors locally, you need to follow these steps:
 - GitHub: [@githubhandle](https://github.com/Lizdev-05)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/elizabeth-oyinlade-ojesanmi-0702aa16a)
 
+## Autor 2
+
+- GitHub: [@githubhandle](https://github.com/Abdullah2213565)
+- Twitter: [@twitterhandle](https://twitter.com/dulakhan024)
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
