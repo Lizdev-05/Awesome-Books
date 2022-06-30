@@ -2,15 +2,49 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
 }
 
 body {
-  background: url(body-img.jpg);
+  background: url(body-img-3.jpg);
   background-repeat: no-repeat;
 }
 
 .container {
   padding: 20px 100px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid  rgb(7, 58, 78);
+  padding: 10px 15px;
+  color: rgb(1, 27, 49);
+}
+
+nav h1{
+  font-style: oblique;
+}
+nav > ul{
+  display: flex;
+  justify-content: space-between;
+}
+nav li:nth-child(1), nav li:nth-child(2){
+  border-right: 2px solid  rgb(7, 58, 78);
+}
+
+li{
+  list-style: none;
+}
+
+li a{
+  text-decoration: none;
+  color:rgb(1, 27, 49);
+  font-size: 20px;
+  font-weight: 900;
+  padding: 5px 15px;
+
 }
 
 .section-one {
@@ -26,20 +60,20 @@ body {
   margin: 20px 0;
 }
 
-li {
+.book-list li {
   display: flex;
   justify-content: space-between;
   list-style: none;
   padding: 8px 15px;
 }
 
-li h2 {
+.book-list li h2 {
   margin-bottom: 5px;
   font-size: 22px;
   font-weight: 500;
 }
 
-li .title {
+.book-list li .title {
   font-weight: 600;
 }
 
@@ -118,7 +152,33 @@ li > button:hover {
   font-weight: 800;
   font-style: italic;
 }
+/* .info-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 10px;
+  gap: 20px;
 
-/* .error p{
+}
 
-} */
+.info-section h2{
+  color: rgb(7, 58, 78);
+  font-size: 28px;
+  font-weight: 600;
+}
+.info-section p{
+  color: rgb(1, 27, 49);;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+.info-section li{
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(1, 27, 49);
+  list-style-type: inherit;
+}
+ */
+
