@@ -152,7 +152,7 @@ li > button:hover {
   font-weight: 800;
   font-style: italic;
 }
-/* .info-section{
+.info-section{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,5 +180,5 @@ li > button:hover {
   color: rgb(1, 27, 49);
   list-style-type: inherit;
 }
- */
+
 
