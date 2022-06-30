@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background: url(body-img.jpg);
+  background-repeat: no-repeat;
+}
+
 .container {
   padding: 20px 100px;
 }
@@ -14,6 +19,7 @@
 
 .section-one h1 {
   text-align: center;
+  color: rgb(7, 58, 78);
 }
 
 .table-part {
@@ -21,12 +27,20 @@
 }
 
 li {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
-  margin: 20px 0;
+  padding: 8px 15px;
 }
 
 li h2 {
   margin-bottom: 5px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+li .title {
+  font-weight: 600;
 }
 
 li button {
@@ -35,15 +49,76 @@ li button {
   padding: 5px;
 }
 
-#form input {
-  padding: 10px;
+li > button:hover {
+  background-color: rgba(202, 0, 0, 0.904);
+  color: #fff;
 }
 
-#form button {
-  padding: 5px;
+.book-list {
+  border: 1px solid skyblue;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.table-list > li {
+  padding: 10px 15px;
+}
+
+.book-list > li:nth-child(odd) {
+  background-color: rgba(73, 196, 245, 0.836);
+  color: rgb(233, 232, 232);
+}
+
+.book-list > li:nth-child(even) {
+  background-color: rgb(245, 245, 245);
+  color: #2a2a2a;
+}
+
+.title-div {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.form-section {
+  text-align: center;
+}
+
+.form-section h2 {
+  color: rgb(7, 64, 78);
+  font-weight: 800;
+  font-size: 32px;
+}
+
+#form input {
+  padding: 10px;
+  width: 40%;
+  margin-top: 10px;
+}
+
+#form > button {
+  padding: 10px;
+  margin-left: 35%;
+  background-color: rgba(73, 196, 245, 0.836);
+  color: #fff;
+  border: 1px solid skyblue;
+  font-size: 18px;
+}
+
+#form > button:hover {
+  background-color: white;
+  color: black;
 }
 
 .error {
   padding: 2px 10px;
-  color: red;
+  color: rgb(143, 8, 8);
+  margin-left: 25%;
+  font-size: 24px;
+  font-weight: 800;
+  font-style: italic;
 }
+
+/* .error p{
+
+} */
