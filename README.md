@@ -14,7 +14,8 @@ The project will contain the List, Add and Contact page.
 - CSS3
 - Linters
 
-<!-- ## Live Demo -->
+## Live Demo 
+[Click me to check my awesome book shelf](https://github.com/Lizdev-05)
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
