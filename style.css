@@ -30,6 +30,7 @@ li {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  padding: 5px 10px;
 }
 
 li h2 {
