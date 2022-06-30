@@ -86,10 +86,8 @@ li > button:hover {
 
 .form-section h2 {
   color: rgb(7, 64, 78);
-  font-weight: 800px;
+  font-weight: 800;
   font-size: 32px;
-  color:  rgb(7, 58, 78);
-  
 }
 
 #form input {
@@ -119,7 +117,6 @@ li > button:hover {
   font-size: 24px;
   font-weight: 800;
   font-style: italic;
-  
 }
 
 /* .error p{
