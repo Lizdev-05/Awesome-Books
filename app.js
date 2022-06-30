@@ -47,7 +47,7 @@ class Book {
   }
 }
 
-// const book = new Book();
+// Function for displaying books
 function displayBooks(title, author, id) {
   const bookList = document.querySelector('.book-list');
   const items = document.createElement('li');
@@ -59,7 +59,6 @@ function displayBooks(title, author, id) {
   const removeBtn = document.createElement('button');
   removeBtn.textContent = 'Remove';
   removeBtn.className = 'removeBtn';
-  // removeBtn.id = id;
   items.appendChild(removeBtn);
   bookList.appendChild(items);
 

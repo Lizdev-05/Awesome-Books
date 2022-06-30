@@ -14,6 +14,7 @@ The project will contain the List, Add and Contact page.
 - CSS3
 - Linters
 
+<!-- ## Live Demo -->
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
@@ -54,6 +55,12 @@ For tracking linters errors locally, you need to follow these steps:
 
 - GitHub: [@githubhandle](https://github.com/Lizdev-05)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/elizabeth-oyinlade-ojesanmi-0702aa16a)
+
+## Autor 2
+**Abdullah Asghar**
+- GitHub: [@githubhandle](https://github.com/Abdullah2213565)
+- Twitter: [@twitterhandle](https://twitter.com/dulakhan024)
+
 
 ## 🤝 Contributing
 
