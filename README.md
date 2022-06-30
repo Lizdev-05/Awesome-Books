@@ -14,9 +14,6 @@ The project will contain the List, Add and Contact page.
 - CSS3
 - Linters
 
-## Live Demo
-
-<!-- [Live Demo Link](https://lizdev-05.github.io/Women-conference/) -->
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
