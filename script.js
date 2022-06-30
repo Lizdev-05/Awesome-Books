@@ -92,3 +92,76 @@ if (books !== null) {
     displayBooks(book.title, book.author, book.id);
   });
 }
+
+
+// Navigation
+
+function handleLinkClick(e){
+
+  // const sectionPart = document.getElementsByClassName('hide');
+  // for (let i = 0; i < sectionPart.length; i += 1) {
+  //   sectionPart[i].style.display = 'none';
+  // }
+
+  
+
+  const navLinks = document.getElementsByClassName('nav-link');
+  for (let i = 0; i < navLinks.length; i += 1) {
+    navLinks[i].style.color = '';
+  }
+
+  if (e.target.classList.contains('addNav')) {
+    document.querySelector('#add').style.display = 'block';
+    e.target.style.color = '#f5f5f5';
+    document.querySelector('#contact').style.display = 'none';
+    document.querySelector('#book-lists').style.display = 'none';
+  }
+  if (e.target.classList.contains('contact')) {
+    document.querySelector('#contact').style.display = 'flex';
+    e.target.style.color = '#f5f5f5';
+    document.querySelector('#book-lists').style.display = 'none';
+    document.querySelector('.form-section').style.display = 'none';
+   
+  }
+
+  if (e.target.classList.contains('list')) {
+    document.querySelector('#book-lists').style.display = 'block';
+    e.target.style.color = '#f5f5f5';
+    document.querySelector('#contact').style.display = 'none';
+    document.querySelector('.form-section').style.display = 'none';
+  }
+};
+ 
+
+  document.addEventListener('click', (e) =>{
+    handleLinkClick(e);
+  })
+
+
+// 
+// listBtn = document.getElementsByClassName('book-lists');
+// addBookBtn = document.getElementsByClassName('form-section');
+// contactBtn = document.getElementsByClassName('info-section')
+
+
+// listBtn.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   document.querySelector('#add').style.display = 'block';
+//   document.querySelector('#book-list').style.display = 'none';
+//   document.querySelector('#contact').style.display = 'none';
+// });
+
+// addBookBtn.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   document.querySelector('#book-lists').style.display = 'block';
+//   document.querySelector('#add').style.display = 'none';
+//   document.querySelector('#contact').style.display = 'none';
+// });
+
+// contactBtn.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   document.querySelector('#contact').style.display = 'flex';
+//   document.querySelector('#add').style.display = 'none';
+//   document.querySelector('#book-list').style.display = 'none';
+// });
+

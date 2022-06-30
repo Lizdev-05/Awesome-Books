@@ -7,12 +7,18 @@
 }
 
 body {
-  background: url(body-img-3.jpg);
+  background: url(body-img.jpg);
   background-repeat: no-repeat;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .container {
   padding: 20px 100px;
+ 
 }
 
 nav{
@@ -20,7 +26,7 @@ nav{
   justify-content: space-between;
   border: 2px solid  rgb(7, 58, 78);
   padding: 10px 15px;
-  color: rgb(1, 27, 49);
+  color: #2a2a2a;
 }
 
 nav h1{
@@ -40,24 +46,23 @@ li{
 
 li a{
   text-decoration: none;
-  color:rgb(1, 27, 49);
+  color:#2a2a2a;
   font-size: 20px;
   font-weight: 900;
   padding: 5px 15px;
 
 }
 
-.section-one {
-  margin: 20px auto;
-}
-
 .section-one h1 {
   text-align: center;
-  color: rgb(7, 58, 78);
+  color:#2a2a2a;
+  margin: 20px 0;
 }
 
-.table-part {
-  margin: 20px 0;
+
+#book-lists{
+  display: none;
+  margin-top: 50px;
 }
 
 .book-list li {
@@ -88,6 +93,9 @@ li > button:hover {
   color: #fff;
 }
 
+a{
+ color: #f5f5f5;
+}
 .book-list {
   border: 1px solid skyblue;
   width: 70%;
@@ -97,7 +105,6 @@ li > button:hover {
 .table-list > li {
   padding: 10px 15px;
 }
-
 .book-list > li:nth-child(odd) {
   background-color: rgba(73, 196, 245, 0.836);
   color: rgb(233, 232, 232);
@@ -116,10 +123,12 @@ li > button:hover {
 
 .form-section {
   text-align: center;
+  display: none;
+  margin-top: 100px;
 }
 
 .form-section h2 {
-  color: rgb(7, 64, 78);
+  color: #2a2a2a;;
   font-weight: 800;
   font-size: 32px;
 }
@@ -145,6 +154,7 @@ li > button:hover {
 }
 
 .error {
+  
   padding: 2px 10px;
   color: rgb(143, 8, 8);
   margin-left: 25%;
@@ -153,18 +163,19 @@ li > button:hover {
   font-style: italic;
 }
 .info-section{
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
-  margin: 50px auto;
+  margin: 150px auto;
   max-width: 600px;
   padding: 10px;
   gap: 20px;
+  background: radial-gradient(rgb(44 92 112), transparent);
 
 }
 
 .info-section h2{
-  color: rgb(7, 58, 78);
+  color: #2a2a2a;
   font-size: 28px;
   font-weight: 600;
 }
@@ -172,13 +183,22 @@ li > button:hover {
   color: rgb(1, 27, 49);;
   font-size: 20px;
   font-weight: 500;
+  color: rgb(247, 243, 243);
 
 }
 .info-section li{
   font-size: 20px;
   font-weight: 400;
   color: rgb(1, 27, 49);
+  color: rgb(238, 237, 237);
   list-style-type: inherit;
 }
 
-
+footer{
+  position: fixed;
+  bottom: 0;
+  
+}
+footer p{
+  font-size: 18px;
+}

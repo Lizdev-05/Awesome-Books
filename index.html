@@ -12,27 +12,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="container">
+<body>
+    <div class="container">
     <nav>
         <h1>Awesome Books</h1>
         <ul>
-            <li><a href="#" id="list" class="nav-link" data-link> List </a></li>
-            <li><a href="#" id="add" class="nav-link" data-link> Add new </a></li>
-            <li><a href="#" id="contact" class="nav-link" data-link>Contact</a></li>
+            <li><a href="#"  class="nav-link list" > List </a></li>
+            <li><a href="#"  class="nav-link addNav" > Add new </a></li>
+            <li><a href="#" class="nav-link contact" >Contact</a></li>
         </ul>
     </nav>
     <p class="time"></p>
 
     <main>
+        <section id="book-lists">
         <div class="section-one">
-            <h1>All Awesome Books</h1>
+            <h1>All awesome books</h1>
         </div>
 
-        <div class="table-part" id="list">
+        <div class="table-part">
             <ul class="book-list">
             </ul>
         </div>
-
+       </section>
 
         <div class="form-section" id="add">
             <h2>Add a new book</h2>
@@ -44,6 +46,8 @@
                 <button type="submit" class="btn">Add</button>
             </form>
         </div>
+
+
         <section class="info-section" id="contact">
             <h2>Contact Information</h2>
             <p>Do you have any questions to ask or you just want to say "Hello"? <br>
@@ -56,10 +60,11 @@
             </ul>
         </section>
     </main>
+    
     <footer>
         Copyright 2022 Awesome Books<br> All rights reserved
     </footer>
-    </main>
+    </div>
     <script src="script.js"></script>
 </body>
 
