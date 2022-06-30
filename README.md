@@ -15,7 +15,7 @@ The project will contain the List, Add and Contact page.
 - Linters
 
 ## Live Demo 
-(https://lizdev-05.github.io/Awesome-Books/)
+[Click me to check my awesome book shelf](https://github.com/Lizdev-05)
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Setup
 - git clone git@github.com:Lizdev-05/Awesome-Books.git
-- cd Women-conference/
+- cd Awesome-Books/
 -Follow the HTML-CSS linter confuguration to docs to setup linters [Link to Microverse linter docs](https://github.com/microverseinc/linters-config/tree/master/html-css-js)
 
 
