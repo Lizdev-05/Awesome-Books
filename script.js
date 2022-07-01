@@ -92,3 +92,93 @@ if (books !== null) {
     displayBooks(book.title, book.author, book.id);
   });
 }
+
+// Navigation
+
+function handleLinkClick(e) {
+  const navLinks = document.getElementsByClassName('nav-link');
+  for (let i = 0; i < navLinks.length; i += 1) {
+    navLinks[i].style.color = '';
+  }
+
+  if (e.target.classList.contains('addNav')) {
+    document.querySelector('#add').style.display = 'block';
+    e.target.style.color = '#f5f5f5';
+    document.querySelector('#contact').style.display = 'none';
+    document.querySelector('#book-lists').style.display = 'none';
+  }
+  if (e.target.classList.contains('contact')) {
+    document.querySelector('#contact').style.display = 'flex';
+    e.target.style.color = '#f5f5f5';
+    document.querySelector('#book-lists').style.display = 'none';
+    document.querySelector('.form-section').style.display = 'none';
+  }
+
+  if (e.target.classList.contains('list')) {
+    document.querySelector('#book-lists').style.display = 'block';
+    e.target.style.color = '#f5f5f5';
+    document.querySelector('#contact').style.display = 'none';
+    document.querySelector('.form-section').style.display = 'none';
+  }
+}
+
+document.addEventListener('click', (e) => {
+  handleLinkClick(e);
+});
+
+// Date
+const timeElement = document.querySelector('.time');
+const dateElement = document.querySelector('.date');
+
+/**
+ * @param {Date} date
+ */
+function formatTime(date) {
+  const hours12 = date.getHours() % 12 || 12;
+  const minutes = date.getMinutes();
+  const isAm = date.getHours() < 12;
+
+  return `${hours12.toString().padStart(2, '0')}:${minutes
+    .toString()
+    .padStart(2, '0')} ${isAm ? 'AM' : 'PM'}`;
+}
+
+/**
+ * @param {Date} date
+ */
+function formatDate(date) {
+  const DAYS = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+  ];
+  const MONTHS = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+
+  return `${DAYS[date.getDay()]}, ${
+    MONTHS[date.getMonth()]
+  } ${date.getDate()} ${date.getFullYear()}`;
+}
+
+setInterval(() => {
+  const now = new Date();
+
+  timeElement.textContent = formatTime(now);
+  dateElement.textContent = formatDate(now);
+}, 200);

@@ -6,35 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Books shelf</title>
-
-        <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="container">
-    <div class="section-one">
-        <h1>All Awesome Books</h1>
+<body>
+    <div class="container">
+  <header>
+    <nav>
+        <h1>Awesome Books</h1>
+        <ul>
+            <li><a href="#"  class="nav-link list" > List </a></li>
+            <li><a href="#"  class="nav-link addNav" > Add new </a></li>
+            <li><a href="#" class="nav-link contact" >Contact</a></li>
+        </ul>
+    </nav>
+    <div class="timeDisplay">
+       <div class="date"></div>
+        <div class="time"></div>
     </div>
+  </header>
+    
 
-    <div class="table-part">
-        <ul class="book-list">
-        </ul>       
-    </div>
+    <main>
+        <section id="book-lists">
+        <div class="section-one">
+            <h1>All awesome books</h1>
+        </div>
+
+        <div class="table-part">
+            <ul class="book-list">
+            </ul>
+        </div>
+       </section>
+
+        <div class="form-section" id="add">
+            <h2>Add a new book</h2>
+            <form id="form">
+
+                <input type="text" name="title" id="title" class="input" placeholder="Title"> <br> <br>
+                <p class="error"></p>
+                <input type="text" name="author" id="author" class="input" placeholder="Author"> <br> <br>
+                <button type="submit" class="btn">Add</button>
+            </form>
+        </div>
 
 
-    <div class="form-section">
-        <h2>Add a new book</h2>
-        <form  id="form">
-            
-            <input type="text" name="title" id="title" class="input" placeholder="Title"> <br> <br> <p class="error"></p>
-            <input type="text" name="author" id="author" class="input" placeholder="Author"> <br> <br>
-            <button type="submit" class="btn">Add</button>
-            
-             
-        </form>
+        <section class="info-section" id="contact">
+            <h2>Contact Information</h2>
+            <p>Do you have any questions to ask or you just want to say "Hello"? <br>
+                You can reach out to us!
+            </p>
+            <ul class="info-contact">
+                <li>Our email mail@mail.com</li>
+                <li>Our phone Number : 0123765647</li>
+                <li> Our Address streetName 22, 54356 city, Country</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        Copyright 2022 Awesome Books<br> All rights reserved
+    </footer>
     </div>
     <script src="script.js"></script>
 </body>
 
 </html>
-

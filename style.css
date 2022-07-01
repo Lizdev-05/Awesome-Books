@@ -2,44 +2,110 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
 }
 
 body {
   background: url(body-img.jpg);
   background-repeat: no-repeat;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .container {
   padding: 20px 100px;
 }
 
-.section-one {
-  margin: 20px auto;
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid  rgb(7, 58, 78);
+  padding: 10px 15px;
+  color: #2a2a2a;
 }
 
-.section-one h1 {
-  text-align: center;
-  color: rgb(7, 58, 78);
+nav h1 {
+  font-style: oblique;
 }
 
-.table-part {
-  margin: 20px 0;
+nav > ul {
+  display: flex;
+  justify-content: space-between;
 }
 
 li {
+  list-style: none;
+}
+
+.book-list li {
   display: flex;
   justify-content: space-between;
   list-style: none;
   padding: 8px 15px;
 }
 
-li h2 {
+.table-list > li {
+  padding: 10px 15px;
+}
+
+.info-section li {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(238, 237, 237);
+  list-style-type: inherit;
+}
+
+nav li:nth-child(1),
+nav li:nth-child(2) {
+  border-right: 2px solid  rgb(7, 58, 78);
+}
+
+a {
+  color: #f5f5f5;
+}
+
+li a {
+  text-decoration: none;
+  color: #2a2a2a;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 5px 15px;
+}
+
+.section-one h1 {
+  text-align: center;
+  color: #2a2a2a;
+  margin: 20px 0;
+}
+
+#book-lists {
+  display: none;
+  margin-top: 50px;
+}
+
+.form-section h2 {
+  color: #2a2a2a;
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.info-section h2 {
+  color: #2a2a2a;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.book-list li h2 {
   margin-bottom: 5px;
   font-size: 22px;
   font-weight: 500;
 }
 
-li .title {
+.book-list li .title {
   font-weight: 600;
 }
 
@@ -60,10 +126,6 @@ li > button:hover {
   margin-left: 15%;
 }
 
-.table-list > li {
-  padding: 10px 15px;
-}
-
 .book-list > li:nth-child(odd) {
   background-color: rgba(73, 196, 245, 0.836);
   color: rgb(233, 232, 232);
@@ -82,12 +144,8 @@ li > button:hover {
 
 .form-section {
   text-align: center;
-}
-
-.form-section h2 {
-  color: rgb(7, 64, 78);
-  font-weight: 800;
-  font-size: 32px;
+  display: none;
+  margin-top: 100px;
 }
 
 #form input {
@@ -119,6 +177,46 @@ li > button:hover {
   font-style: italic;
 }
 
-/* .error p{
+.info-section {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin: 150px auto;
+  max-width: 600px;
+  padding: 10px;
+  gap: 20px;
+  background: radial-gradient(rgb(44 92 112), transparent);
+}
 
-} */
+footer p {
+  font-size: 18px;
+}
+
+.info-section p {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(247, 243, 243);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.timeDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.date {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+
+.time {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #2a2a2a;
+}
