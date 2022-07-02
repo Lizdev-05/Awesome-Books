@@ -7,9 +7,11 @@
 }
 
 body {
-  background: url(body-img.jpg);
-  background-repeat: no-repeat;
   position: relative;
+  background: radial-gradient(rgb(44 92 112), transparent);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
   top: 0;
   bottom: 0;
   right: 0;
@@ -17,13 +19,14 @@ body {
 }
 
 .container {
-  padding: 20px 100px;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  border: 2px solid  rgb(7, 58, 78);
   padding: 10px 15px;
   color: #2a2a2a;
 }
@@ -61,7 +64,7 @@ li {
 
 nav li:nth-child(1),
 nav li:nth-child(2) {
-  border-right: 2px solid  rgb(7, 58, 78);
+  border-right: 2px solid rgb(7, 58, 78);
 }
 
 a {
@@ -123,11 +126,11 @@ li > button:hover {
 .book-list {
   border: 1px solid skyblue;
   width: 70%;
-  margin-left: 15%;
+  margin: 0 auto;
 }
 
 .book-list > li:nth-child(odd) {
-  background-color: rgba(73, 196, 245, 0.836);
+  background-color: rgb(46 95 114 / 45%);
   color: rgb(233, 232, 232);
 }
 
@@ -157,10 +160,11 @@ li > button:hover {
 #form > button {
   padding: 10px;
   margin-left: 35%;
-  background-color: rgba(73, 196, 245, 0.836);
+  background-color: rgb(51 151 191 / 63%);
   color: #fff;
   border: 1px solid skyblue;
   font-size: 18px;
+  transition: 1.5s;
 }
 
 #form > button:hover {
@@ -181,11 +185,11 @@ li > button:hover {
   display: none;
   flex-direction: column;
   align-items: center;
-  margin: 150px auto;
-  max-width: 600px;
+  margin: 90px auto;
+
+  /* max-width: 600px; */
   padding: 10px;
   gap: 20px;
-  background: radial-gradient(rgb(44 92 112), transparent);
 }
 
 footer p {
@@ -200,23 +204,127 @@ footer p {
 
 footer {
   position: fixed;
-  bottom: 0;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin: 0 auto;
 }
 
 .timeDisplay {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  padding: 5px 15px;
 }
 
 .date {
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 700;
   color: #2a2a2a;
 }
 
 .time {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 700;
   color: #2a2a2a;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding: 10px 5px;
+    border: none;
+  }
+
+  nav h1 {
+    font-style: oblique;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  nav > ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  nav li {
+    font-size: 10px;
+  }
+
+  li a {
+    text-decoration: none;
+    color: #2a2a2a;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+  }
+
+  .book-list li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .book-list {
+    width: 100%;
+  }
+
+  #form input {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #form > button {
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .error {
+    padding: 2px;
+    color: rgb(143, 8, 8);
+    margin-left: 25%;
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .info-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    width: 100%;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .info-section p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .info-section ul {
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+
+  .info-section li {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(238, 237, 237);
+    list-style-type: inherit;
+  }
 }
