@@ -48,17 +48,12 @@ For tracking linters errors locally, you need to follow these steps:
 - Use GitHub pages to deploy website
 - For more information about publishing sources, see [About github pages](https://pages.github.com/)
 
-## Contributors
+## Author
 
 👤 **Ojesanmi Elizabeth Oyin**
 
 - GitHub: [@githubhandle](https://github.com/Lizdev-05)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/elizabeth-oyinlade-ojesanmi-0702aa16a)
-
-
-**Abdullah Asghar**
-- GitHub: [@githubhandle](https://github.com/Abdullah2213565)
-- Twitter: [@twitterhandle](https://twitter.com/dulakhan024)
 
 
 ## 🤝 Contributing
